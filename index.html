@@ -1,121 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-nav{
-border:1px;
-background-color:blue;
-color:white;
-padding:5px;}
-table{
- width:200px
-	text-align:left;	
-}
-table,th,tr,td{
-        border:1px solid blue;
-		border-collapse:collapse;
-		padding:0.5rem 1rem;
-		}
-		tr:nth-child(odd){
-		background-color:white;}
-		.l1{
-		font-family:sans-serif;
-        color:black;
-		list-style-type:circle;}
-		.l2{
-		font-family:sans-serif;
-		color:black;
-		list-style-type:circle;}
-		.l3{
-		font-family:sans-serif;
-		color:black;
-		list-style-type:square;}
-		.l4{
-		font-family:sans-serif;
-		color;black;
-		list-style-type:circle;}
-		
-		
-
-
-</style>
-<title>resume2</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
-		
+
+  <header>
+    <div class="logo">MyPortfolio</div>
+    <nav class="navbar">
+      <div class="menu-toggle" id="toggle-menu">&#9776;</div>
+      <ul id="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h1>Hello, I'm <span class="highligh">saloni Kumari</span></h1>
+    <p>Frontend Developer | Coder | Learner</p>
+    <div class="social-links">
+      <a href="https://github.com/saloni1639" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/saloni-gupta-478a2b323/" target="_blank">LinkedIn</a>
+    </div>
+  </section>
+
+  <section id="about">
+  <h2>About Me</h2>
+  <p>
+    Hello! I'm a passionate and dedicated individual with a strong interest in learning, problem-solving, and creating impactful work. I thrive in dynamic environments and enjoy turning ideas into reality through thoughtful design, development, and execution.
+  </p>
+  <p>
+    With a growing skill set in [your key skills or field, e.g., web development, graphic design, data analysis], I focus on writing clean code, building responsive interfaces, and continuously improving my craft. I'm always open to new challenges that allow me to grow both personally and professionally.
+  </p>
+  <p>
+    When I'm not working on projects, I love exploring new technologies, reading about innovation, and collaborating with like-minded people. My goal is to build meaningful solutions that create value and make a difference.
+  </p>
+</section>
 
 
-<center><h1 style="color:blue">SALONI KUMARI</h1>
-<h3 style="color:black">Student</h3></center>
-<center><a href="mailto:gecvsaloni@gmail.com"> Email:gecvsaloni@gmail.com</a><br>
-<a href="Tel:+918651245479">Fon-no:+918651245479</a></center><br>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-list">
+      <div class="project-card">
+        <h3>Grocery Store Website</h3>
+        <p>An eCommerce frontend for grocery shopping with cart and user login system.</p>
+        <a href="file:///C:/Users/abhis/OneDrive/Desktop/index.html/index.html">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>Personal portfolio showcasing my skills, projects, and contact info.</p>
+        <a href="file:///C:/Users/abhis/OneDrive/Desktop/portfolio/index.html#">View Project</a>
+      </div>
+       <div class="project-card">
+        <h3>My resume</h3>
+        <p>Task manager app built with JavaScript featuring add/delete functionality.</p>
+        <a href="https://saloni1639.github.io/resume/">View My resume</a>
+      </div>
+    </div>
+    </section>
+      
 
-<hr>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required/>
+      <input type="email" name="email" placeholder="Your Email" required/>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+     
+  </section>
 
-<h2 style="color:blue">Objective</h2>
-<p style="color:black">Hardworking Student seeking employment. Ready to utilize my skills and passion to further the mission of a company.<br>
- Technologically adept, offering experience with many different social media platforms, office technology programs, and advanced computer skills.<br>
- Bringing forth a positive attitude and the willingness and motivation to learn new programs.</p>
- 
-<hr>
+  <footer>
+    <p>&copy;  saloni Kumari.</p>
+  </footer>
 
-<h2 style="color:blue">Education</h2>
-<table>
-<tr>
-  <th>Degree</th>
-  <th>Institute</th>
-  <th>Year</th>
- </tr>
- <tr>
- <td>Intermediate</td>
- <td>s/y/c/high school</td>
- <td>2020</td>
- </tr>
- <tr>
- <td>Matriculation</td>
- <td>s/y/c/high school</td>
- <td>2022</td>
- </tr>
- <tr>
- <td>B.tech</td>
- <td>Government Engineering College Vaishali</td>
- <td>2023-27</td>
- </tr>
- </table>
- <h2 style="color:blue">Skills</h2>
- <ol class="l1">
- <li>C,C++</li>
- <li>Dsa</li>
- <li>Html,css,java script</li>
- <li>problem-solving</li>
- <li>Advanced communication skills</li>
- <li>Motivated attitude</li>
- <li>Leadership</li>
- <li>Teamwork</li>
- <li>Listening skills</li>
- </ol>
- <h2 style="color:blue">Languages</h2>
- <ol class="l2">
- <li>Hindi</li>
- <li>English</li>
- <li>Sanskrit</li>
- </ol>
- <h2 style="color:blue">Hobbies</h2>
- <ol class="l3">
- <li>Codding</li>
- <li>Volunteering</li>
- <li>Public Speaking</li>
- <li>Reading</li>
- <li>Learning a new Language</li>
- <li>Photography</li>
- <li>Dancing</li>
- <li>Extera activity</li>
- </ol>
- <h2 style="color:blue">Internship</h2>
- <ol class="l4">
- <li>Web Development</li>
- </ol>
- <center><h2 style="color:blue">THANK YOU!</h2></center>
 </body>
 </html>
